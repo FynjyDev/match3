@@ -66,7 +66,7 @@ public class GameBoard : MonoBehaviour
             }
             else //If we made a match
             {
-                for (int j = 1; j < _connected.Count; j++)
+                for (int j = 0; j < _connected.Count; j++)
                 {
                     Point _pnt = _connected[j];
 
