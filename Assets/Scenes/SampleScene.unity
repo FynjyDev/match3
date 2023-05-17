@@ -2632,23 +2632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 480ca35a12c39e243863c829d7d2a008, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BoardLayout:
-    grid: {fileID: 0}
-    rows:
-    - row: 000000000000000000
-    - row: 000000000000000000
-    - row: 000000000000000000
-    - row: 000000000000000000
-    - row: 000000000000000000
-    - row: 000000000000000000
-    - row: 000000000000000000
-    - row: 000000000000000000
-    - row: 000000000000000000
-    - row: 000000000000000000
-    - row: 000000000000000000
-    - row: 000000000000000000
-    - row: 000000000000000000
-    - row: 000000000000000000
+  BoardSettings: {fileID: 11400000, guid: 4a19ff525b956fb4b840e40f7e0242d0, type: 2}
   Pieces:
   - {fileID: 21300000, guid: bf56bbdaed222e04db09955b26ca132c, type: 3}
   - {fileID: 21300000, guid: 72bea5fb58d51da43b94915717a3e0be, type: 3}

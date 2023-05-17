@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class GameBoard : MonoBehaviour
 {
-    public ArrayLayout BoardLayout;
+    public GameBoardSettings BoardSettings;
 
     [Header("UI Elements")]
     public Sprite[] Pieces;
@@ -190,7 +190,7 @@ public class GameBoard : MonoBehaviour
         {
             for (int x = 0; x < width; x++)
             {
-                board[x, y] = new Node((BoardLayout.rows[y].row[x]) ? -1 : FillPiece(), new Point(x, y));
+                board[x, y] = new Node((BoardSettings.BoardLayout.rows[y].row[x]) ? -1 : FillPiece(), new Point(x, y));
             }
         }
     }
