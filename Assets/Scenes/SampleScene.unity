@@ -2329,7 +2329,6 @@ GameObject:
   - component: {fileID: 381340879}
   - component: {fileID: 381340880}
   - component: {fileID: 381340881}
-  - component: {fileID: 381340882}
   m_Layer: 0
   m_Name: <-Game Board->
   m_TagString: Untagged
@@ -2515,18 +2514,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameBoard: {fileID: 381340880}
---- !u!114 &381340882
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 381340878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29c422f84b56f2f469df536c9d888092, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &457577838 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2624206659508734291, guid: ca64234a47ef4184c810559afbc9c4f4, type: 3}
