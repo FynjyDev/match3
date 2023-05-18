@@ -19,6 +19,8 @@ public class GameBoard : MonoBehaviour
     private int[] fills;
     private Node[,] board;
 
+    [SerializeField]
+    private List<BackgroundPiece> background; 
     private List<NodePiece> update;
     private List<FlippedPieces> flipped;
     private List<NodePiece> dead;
@@ -191,8 +193,21 @@ public class GameBoard : MonoBehaviour
             for (int x = 0; x < width; x++)
             {
                 board[x, y] = new Node((BoardSettings.BoardLayout.rows[y].row[x]) ? -1 : FillPiece(), new Point(x, y));
+                GetBackground(x, y).Initialize(BoardSettings.BoardLayout.rows[y].row[x] ? BoardSettings.BlokedSprite : BoardSettings.DefaultSprite);
+
             }
         }
+    }
+
+    private BackgroundPiece GetBackground(int x, int y)
+    {
+        BackgroundPiece _background = new BackgroundPiece();
+
+        for (int i = 0; i < background.Count; i++)
+            if (background[i].index.x == x && background[i].index.y == y)
+                _background = background[i];
+
+        return _background;
     }
 
     private void VerifyBoard()
